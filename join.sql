@@ -29,7 +29,7 @@ SELECT * FROM student_grades;
 /* cross join */
 SELECT * FROM student_grades, students;
 
-/* implicit inner join */
+/* implicit inner join (explicit is better practice) */
 SELECT * FROM student_grades, students
     WHERE student_grades.student_id = students.id;
     
